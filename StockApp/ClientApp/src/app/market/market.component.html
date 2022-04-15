@@ -1,0 +1,83 @@
+<div class="row">
+<div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+  <div class="card card-hover-shadow h-100">
+    <div class="card-body">
+      <h6 class="card-subtitle">USD/EUR</h6>
+
+      <div class="row align-items-center gx-2 mb-1">
+        <div class="card-text col-6">
+          <h2 class="card-title text-inherit">1.0960</h2>
+        </div>
+      </div>
+      <span class="badge text-danger">
+        <i class="bi-graph"></i> -0.2276%
+      </span>
+    </div>
+      </div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+  <div class="card card-hover-shadow h-100">
+    <div class="card-body">
+      <h6 class="card-subtitle">Gold</h6>
+      <div class="row align-items-center gx-2 mb-1">
+        <div class="card-text col-6">
+          <h2 class="card-title text-inherit">1,936.70</h2>
+        </div>
+      </div>
+      <span class="badge  text-danger">
+        <i class="bi-graph"></i> -0.90%
+      </span>
+    </div>
+  </div>
+</div>
+<div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+   <div class="card card-hover-shadow h-100">
+    <div class="card-body">
+      <h6 class="card-subtitle">Silver</h6>
+
+      <div class="row align-items-center gx-2 mb-1">
+        <div class="card-text col-6">
+          <h2 class="card-title text-inherit">25.25</h2>
+        </div>
+      </div>
+           <span class="badge text-danger">
+        <i class="bi-graph"></i> -1.44%
+      </span>
+    </div>
+  </div>
+  </div>
+  <div class="col-sm-6 col-lg-3 mb-3 mb-lg-5">
+    <div class="card card-hover-shadow h-100">
+      <div class="card-body">
+        <h6 class="card-subtitle">BTC-USD</h6>
+        <div class="row align-items-center gx-2 mb-1">
+          <div class="card-text  col-6">
+            <h2 class="card-title text-inherit">46,919</h2>
+          </div>
+        </div>
+        <span class="badge text-success">
+          <i class="bi-graph "></i> +5.02%
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-1">
+    <div class="row end-xs">
+      <div class="col-xs-12">
+          <input type="text" class="search-input"placeholder="Search">
+      </div>
+  </div>
+  </div>
+  </div>
+<div class="row">
+  <h1 style="text-align:center">Candlestick Chart</h1>
+<div id="chart">
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [xaxis]="chartOptions.xaxis"
+    [yaxis]="chartOptions.yaxis"
+    [title]="chartOptions.title"
+  ></apx-chart>
+</div>
+</div>

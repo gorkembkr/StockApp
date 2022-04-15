@@ -1,0 +1,70 @@
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+.icon{
+  width: 45px;
+}
+.example-full-width {
+  width: 100%;
+}
+.title-log-in{
+  margin-bottom: 10%;
+  margin-left: 40%;
+  
+}
+.example-container .mat-form-field + .mat-form-field {
+margin-left: 8px;
+}
+.example-form{
+  padding-top: 10%;
+padding-left: 10%;
+padding-right: 10%;
+}
+.example-container{
+  padding-top: 8%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+}
+.example-right-align {
+  text-align: right;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+  display: none;
+  }
+  
+  input.example-right-align {
+  -moz-appearance: textfield;
+  }
+
+.example-button-row{
+  margin-left: 40%;
+  margin-bottom: 10px;
+}
+.text-center{
+  padding-bottom: 10%;
+}
+.Forgot-password{
+  margin-left: 35%;
+  margin-bottom: 10px;
+}
+.modal-header{
+  padding-left: 45%;
+}

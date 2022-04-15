@@ -1,0 +1,23 @@
+.card{
+    border-radius: 20px;
+}
+.card-subtitle{
+    margin-left: 35%;
+}
+.card-text{
+    margin-left: 30%;
+    margin-top: 10px;
+}
+.badge{
+    margin-left: 35%;
+}
+  .footer-link span {
+      font-size: 14px;
+      text-align: center;
+  }
+  .listing a {
+      color: #18253b;
+      font-weight: 600;
+      margin: 0 10px;
+  }
+  

@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+.page-header{
+  background-color: #ffffff3d;
+}
+.page-header h1{
+  padding: 20px 0;
+  margin: 0;
+}
+.mt-1{
+  margin-top: 20px;
+}
+html {
+  height: 100%;
+}
+.mt-1{
+  margin-top: 20px;
+}
+.search-input{
+  outline: none;
+  border: 1px solid #ccc;
+  padding:  8px 10px;
+  border-radius: 21px;
+  margin-bottom: 5px;
+}
+.search-input:active{
+  border: 1px solid #bbb;
+}
+.search-input.focus{
+  border: 1px solid #aaa;
+}

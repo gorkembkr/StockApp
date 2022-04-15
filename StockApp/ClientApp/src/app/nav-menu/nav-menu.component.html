@@ -1,0 +1,88 @@
+<header>
+  <nav
+    class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container">
+      <img src="assets/icon.png" class="icon">
+      <a class="navbar-brand" [routerLink]="['/']">tockApp</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        aria-label="Toggle navigation"
+        [attr.aria-expanded]="isExpanded"
+        (click)="toggle()"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="navbar-collapse collapse d-sm-inline-flex justify-content-end"
+        [ngClass]="{ show: isExpanded }">
+        <ul class="navbar-nav flex-grow">
+          <li
+            class="nav-item"
+            [routerLinkActive]="['link-active']"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/market']"
+              >Market</a>
+          </li>
+          <li class="nav-item col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/stock-list']">Stock List</a>
+          </li>
+          <li class="nav-item col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" [routerLinkActive]="['link-active']">
+            <a class="nav-link text-dark" [routerLink]="['/verify-email']">fpassword</a>
+          </li>
+        </ul>
+          <div class =" Login-button">
+              <ng-template #content let-modal>
+                <div class="row">
+                <div class="modal-header">
+                    <h3>Log In</h3>
+                </div>
+                  <div class="row">
+                    <form class="example-form">
+                      <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input type="email" matInput placeholder="Ex. pat@example.com" #userName required>
+                      </mat-form-field>
+                    </form>
+                  </div>
+                  <div class="row">
+                    <div class="example-container">
+                      <mat-form-field class="example-full-width" appearance="outline">
+                        <mat-label>Enter your password</mat-label>
+                        <input matInput [type]="hide ? 'password' : 'text'" #userPassword required>
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                      </mat-form-field>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="row">
+                  <div class="Forgot-password">
+                    <a routerLink='/forgot-password' (click)="modal.close('click')">Forgot Password</a>
+                    </div>
+                    </div>
+                    <div class="row">
+                      <section>
+                        <div class="example-button-row">
+                          <button class=" btn btn-lg btn-primary" type="submit" (click) ="authService.SignIn(userName.value, userPassword.value)" (click)="modal.close('click')">Log in </button>
+                        </div>
+                      </section>
+                    </div>
+                  <mat-divider></mat-divider>
+                  <div class="text-center">
+                    <p class="mb-1">Not a member? <a routerLink='/register' (click)="modal.close('click')">Register</a></p>
+                  </div>
+                </ng-template>
+        <button class="btn btn-outline-primary mb-2 me-2" (click)="open(content)">Log In</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

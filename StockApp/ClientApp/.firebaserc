@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "stock-app-11652": {
+      "hosting": {
+        "StockApp": [
+          "stock-app-11652"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "stock-app-11652"
+  }
+}
